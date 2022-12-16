@@ -1,6 +1,7 @@
 import requests
+import os
 
-SHEETY_PRICES_ENDPOINT = YOUR ENDPOINT HERE
+SHEETY_PRICES_ENDPOINT = "https://docs.google.com/spreadsheets/d/1HPnZUfTSY6K3PuW9xTJiVG9lUSkvOCrqB6Zl9Ab2xQ0/edit?usp=sharing"
 
 
 class DataManager:

@@ -2,11 +2,12 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import ElementClickInterceptedException
 import time
+import os
 
-CHROME_DRIVER_PATH = YOUR CHROM DRIVER PATH
-SIMILAR_ACCOUNT = "buzzfeedtasty"
-USERNAME = YOUR INSTAGRAM USERNAME
-PASSWORD = YOUR INSTAGRAM PASSWORD
+CHROME_DRIVER_PATH = os.environ["CHROME DRIVER PATH"]
+SIMILAR_ACCOUNT = os.environ["INSTAGRAM ACCOUNT ID"]
+USERNAME = os.environ["INSTAGRAM USERNAME"]
+PASSWORD = os.environ["INSTAGRAM PASSWORD"]
 
 
 class InstaFollower:
