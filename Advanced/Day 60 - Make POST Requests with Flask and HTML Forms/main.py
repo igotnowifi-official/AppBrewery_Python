@@ -1,10 +1,11 @@
 from flask import Flask, render_template, request
 import smtplib
 import requests
+import os
 
 posts = requests.get("https://api.npoint.io/43644ec4f0013682fc0d").json()
-OWN_EMAIL = YOUR OWN EMAIL ADDRESS
-OWN_PASSWORD = YOUR OWN EMAIL PASSWORD
+OWN_EMAIL = os.environ["EMAIL ADDRESS"]
+OWN_PASSWORD = os.environ["EMAIL PASSWORD"]
 
 app = Flask(__name__)
 
